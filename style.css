@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
+.title{
+    
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: rgb(28, 37, 33) tr;
+    font-size: 44px;
+    box-shadow: 3px 5px 50px 5px rgb(21, 180, 0), 5px 3px 50px 5px rgb(119, 0, 255) ;
+    width: 200px;
+    border-radius: 5px;
+}
+.title-center{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.resize {
+    float: left;
+    width: 25%;
+    margin-top: 30px;
+    text-align: center; /* /* text center*/ 
+}
+
+.gallery {
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    display: block; /* Remove extra bottom spaces */
+    margin: auto;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 20px black);
+ 
+}
+
+.gallery:hover img{
+    border: 5px solid rgb(223, 241, 120);
+    border-radius: 10px;
+    filter: drop-shadow(3px 5px 10px rgb(136, 255, 100));
+    scale: 1.2 1.1;
+    transition: 0.8s;
+}
+.gallery:active img{
+    border: 5px solid rgb(233, 7, 7);
+    border-radius: 10px;
+    filter: drop-shadow(3px 5px 10px rgb(136, 255, 100));
+    scale: 1.2 1.1;
+    transition: 1s;
+}
+.description {
+    font-size: 24px;
+    color: black;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    margin-bottom: 90px;
+}
+.about{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+ @media (max-width: 890px){
+    .resize{
+        width: 50%;
+    }
+    .description {
+        font-size: 18px; 
+    }
+  img{
+    display: inline;
+  }
+
+}
+@media (max-width: 768px) {
+    .resize {
+        width: 50%;
+    }
+
+    .description {
+        font-size: 16px; 
+    }
+    .title{
+        font-size: 30px;
+        
+    }
+}
+@media (max-width: 480px) {
+    .resize {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+
+}
